@@ -1,0 +1,8 @@
+$tile_color: #C0C0C0;
+$tile_size: 32px;
+
+.tile {
+	width: $tile_size;
+	height: $tile_size;
+	background-color: $tile_color;
+}
