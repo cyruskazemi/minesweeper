@@ -1,8 +1,31 @@
-$tile_color: #C0C0C0;
+@function strip_units($number) {
+	@return $number / ($number * 0 + 1);
+}
+
+$tile_color_down: #C0C0C0;
+$tile_color_up: darken($tile_color_down, 25%);
 $tile_size: 32px;
+$tiles_per_row: 8;
+
+body {
+	text-align: center;
+}
+
+#board {
+	width: strip_units($tile_size) * ($tiles_per_row + 1) + px;
+	margin: auto;
+}
 
 .tile {
+	min-width: $tile_size;
+	min-height: $tile_size;
 	width: $tile_size;
 	height: $tile_size;
-	background-color: $tile_color;
+	background-color: $tile_color_up;
+	float: left;
+	border: 1px solid black;
+}
+
+.tile.clicked {
+	background-color: $tile_color_down;
 }

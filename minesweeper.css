@@ -1,0 +1,18 @@
+body {
+  text-align: center; }
+
+#board {
+  width: 288px;
+  margin: auto; }
+
+.tile {
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  background-color: gray;
+  float: left;
+  border: 1px solid black; }
+
+.tile.clicked {
+  background-color: silver; }
