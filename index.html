@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title>title</title>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Minesweeper Reconstructed</title>
+		<meta name="description" content="Minesweeper Javascript clone">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="minesweeper.css">
  	</head>
  	<body>
-  	<h1>Minesweeper</h1>
+  		<h1>Minesweeper</h1>
+	  	<div id="controls">
+	  		<p id="game_description">Welcome to Minesweeper! Uncover all of the empty squares without hitting a mine. Click the smiley face to see if you won. Press the spacebar if you are stuck.</p>
+			<label>Width: <input id="BOARD_WIDTH" type="text" size="3" value="8"> </label>
+			<label>Height: <input id="BOARD_HEIGHT" type="text" size="3" value="8"> </label>
+			<label>Mines: <input id="INITIAL_MINES" type="text" size="3" value="10"> </label> <br />
+			<button id="new_game">New game</button> 
+			<button id="smiley">:-)</button>
+		</div>
 		<div id="board">
-			<div id="top_panel">
-				<button id="new_game">New game</button>
-				<button id="smiley">:-)</button>
-			</div>
-  		<div id="tiles"></div>
+  			<div id="tiles"></div>
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   		<script type="text/javascript" src="minesweeper.js"></script>

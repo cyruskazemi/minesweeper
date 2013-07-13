@@ -1,18 +1,30 @@
 body {
-  text-align: center; }
+  text-align: center;
+  background-image: url("img/witewall_3.png");
+  font-family: Helvetica, sans-serif; }
 
-#board {
-  width: 288px;
-  margin: auto; }
+#controls {
+  margin: 1em auto;
+  width: 30em; }
+  #controls button {
+    font-size: 1.4em; }
+
+#smiley {
+  margin-top: 1em; }
+
+#tiles {
+  margin: auto;
+  overflow: auto; }
 
 .tile {
-  min-width: 32px;
-  min-height: 32px;
-  width: 32px;
-  height: 32px;
+  min-width: 28px;
+  min-height: 28px;
+  width: 28px;
+  height: 28px;
   background-color: gray;
-  float: left;
-  border: 1px solid black; }
+  display: inline-block;
+  border: 1px solid black;
+  padding: auto; }
 
 .tile.clicked {
   background-color: silver; }

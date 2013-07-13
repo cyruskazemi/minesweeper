@@ -4,16 +4,31 @@
 
 $tile_color_down: #C0C0C0;
 $tile_color_up: darken($tile_color_down, 25%);
-$tile_size: 32px;
+$tile_size: 28px;
 $tiles_per_row: 8;
+$default_width: strip_units($tile_size) * ($tiles_per_row + 1) + px;
 
 body {
 	text-align: center;
+	background-image: url('img/witewall_3.png');
+	font-family: Helvetica, sans-serif;
 }
 
-#board {
-	width: strip_units($tile_size) * ($tiles_per_row + 1) + px;
+#controls {
+	margin: 1em auto;
+	width: 30em;
+	button {
+		font-size: 1.4em;
+	}
+}
+
+#smiley {
+	margin-top: 1em;
+}
+
+#tiles {
 	margin: auto;
+	overflow: auto;
 }
 
 .tile {
@@ -22,8 +37,9 @@ body {
 	width: $tile_size;
 	height: $tile_size;
 	background-color: $tile_color_up;
-	float: left;
+	display: inline-block;
 	border: 1px solid black;
+	padding: auto;	
 }
 
 .tile.clicked {
