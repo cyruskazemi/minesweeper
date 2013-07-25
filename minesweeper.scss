@@ -12,6 +12,7 @@ body {
 	text-align: center;
 	background-image: url('img/witewall_3.png');
 	font-family: Helvetica, sans-serif;
+	overflow-x: scroll;
 }
 
 #controls {
@@ -20,6 +21,10 @@ body {
 	button {
 		font-size: 1.4em;
 	}
+}
+
+#game_description {
+	text-align: justify;
 }
 
 #smiley {

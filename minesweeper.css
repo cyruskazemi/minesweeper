@@ -1,13 +1,17 @@
 body {
   text-align: center;
   background-image: url("img/witewall_3.png");
-  font-family: Helvetica, sans-serif; }
+  font-family: Helvetica, sans-serif;
+  overflow-x: scroll; }
 
 #controls {
   margin: 1em auto;
   width: 30em; }
   #controls button {
     font-size: 1.4em; }
+
+#game_description {
+  text-align: justify; }
 
 #smiley {
   margin-top: 1em; }
